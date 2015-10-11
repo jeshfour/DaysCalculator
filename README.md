@@ -6,7 +6,8 @@ You have joined a science project as the latest team member. Scientists on the p
 
 As the new guy on the team, you are tasked with the job. The scientists are using an older, command line based system and need at least one way of providing input and output on the terminal - they’re asking you to build the system accordingly. They also don’t just take your word for it when it comes to saying “i’m done”, they want proof. It turns out they have designed the job as an experiment and given you a few test cases to pass and validate the output of your program. 
  
-TEST CASES (DD/MM/YYYY) 
+TEST CASES (DD/MM/YYYY)
+
 1. 02/06/1983 - 22/06/1983: 19 days 
 2. 04/07/1984 - 25/12/1984: 173 days 
 3. 03/01/1989 - 03/08/1983: 1979 days 
