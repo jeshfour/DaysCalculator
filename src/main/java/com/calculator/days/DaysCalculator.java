@@ -11,9 +11,9 @@ public class DaysCalculator {
     private String startDateStr;
     private String endDateStr;
 
-    public DaysCalculator(final String startDateStr, final String endDate) {
+    public DaysCalculator(final String startDateStr, final String endDateStr) {
         this.startDateStr = startDateStr;
-        this.endDateStr = endDate;
+        this.endDateStr = endDateStr;
     }
 
     public long getDays() throws ParseException {
@@ -22,8 +22,8 @@ public class DaysCalculator {
         }
         final SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
         simpleDateFormat.setTimeZone(getTimeZone("UTC"));// its important to calculate days between dates fall in dst and non dst times
-        Date startDate = simpleDateFormat.parse(this.startDateStr);
-        Date endDate = simpleDateFormat.parse(this.endDateStr);
+        final Date startDate = simpleDateFormat.parse(this.startDateStr);
+        final Date endDate = simpleDateFormat.parse(this.endDateStr);
         if (startDate.equals(endDate)) {
             return 0;
         }
